@@ -1,0 +1,244 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50 px;
+}
+
+.barraSuperior{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-bottom: 10;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+.searchInput::placeholder{
+    color: lightgray;
+}
+.ofertaLimitada{
+    font-size: 20px;
+    border-bottom: 2px solid rgb(128, 0, 49);
+    cursor: pointer;
+}
+
+.barraInferior{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem{
+   margin-right: 50px;
+   cursor: pointer;
+   color: lightgray;
+   font-weight: 400; 
+}
+.lista{
+    background-color: blanchedalmond;
+    overflow: hidden;
+}
+.listaDeslizante{
+    display: flex;   
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+.elementosLista{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sliderBg{
+width: 100px;
+height: 100;
+border-radius: 50%;
+position: absolute;
+}
+
+.silderImg{
+z-index: 1;
+}
+
+.listaTitulo{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255, 190, 51, 0.884);
+    z-index: 1;
+}
+.listaPrecio{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(255, 190, 51, 0.884);
+    border: 1px solid white;
+}
+
+.buyBtn{
+    position: absolute;
+    top: 60%;
+    left: 24%;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgba(255, 190, 51, 0.884);
+    border: 1px solid white;
+    background-color: whitesmoke;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.buyBtn:hover{
+    background-color: rgba(255, 190, 51, 0.884);
+    color: whitesmoke;
+}
+
+elementosLista:nth-child(1) .sliderBg{
+    background-color:  blanchedalmond;
+}
+
+elementosLista:nth-child(2) .sliderBg{
+    background-color:  gray;
+}
+
+elementosLista:nth-child(3) .sliderBg{
+    background-color:  burlywood;
+}
+
+elementosLista:nth-child(1) .listaPrecio{
+    background-color:  blanchedalmond;
+}
+
+elementosLista:nth-child(2) .listaPrecio{
+    background-color: gray;
+}
+
+elementosLista:nth-child(3) .listaPrecio{
+    background-color:  burlywood;
+}
+
+.caracteristicas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.caracteristica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.caracteristicaImg{
+    width: 50px;
+    height: 50px;
+}
+
+.caracteristicaTitulo{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.caracteristicaRelevante{
+    color: gray;
+    width: 50%;
+    height: 100%;
+}
+
+.producto{
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.imagenProducto{
+    width: 50%;
+}
+
+.detalleProducto{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 40%;
+    padding: 50px;
+}
+
+.tituloProducto{
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.descripcion{
+    font-style: 24px;
+    color: gray;
+}
+
+.colores,.talles{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.color{
+    width:  32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color:last-child{
+    background-color: orange;
+}
+
+.color:last-child{
+    background-color: green;
+}
+
+.talle{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10 px;
+    cursor: pointer;
+    font-size: 20 px;
+}
+
+.botonProducto{
+    float: right;
+    padding: 10px 20 px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.botonProducto:hover{
+    background-color: white;
+    color: black;
+}

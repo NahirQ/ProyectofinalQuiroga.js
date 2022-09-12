@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;1,500&family=Supermercado+One&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <title>Vem Jogar Store</title>
+</head>
+<body>
+    <nav>
+        <div class="barraSuperior">
+            <div class="elemento">
+                <img src="IMG/logo2.jpg" width="50" height="50" alt="">
+            </div>
+            <div class="elemento">
+                <div class="search">
+                    <input type="text" placeholder="busqueda..." class="searchInput">
+                    <img src="IMG/lupa.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="elemento">
+                <span class="ofertaLimitada">Oferta Limitada!!!</span>
+            </div>
+        </div>
+        <div class="barraInferior">
+            <h3 class="menuItem">Remera</h3>
+            <h3 class="menuItem">Pantalon</h3>
+            <h3 class="menuItem">Intrumentos</h3>
+        </div>
+    </nav>
+    <div class="lista">
+        <div class="listaDeslizante">
+            <div class="elementosLista">
+                <img src="IMG/remera.jpg" alt="" class="silderImg">
+                <div class="sliderBg"></div>
+                <h1 class="listaTitulo"> REMERA <br> BASICA <br> NARANJA</h1>
+                <h2 class="listaPrecio">$2.000</h2>
+                <a href="producto">
+                <button class="buyBtn">comprar ya!</button>
+            </a>
+            
+            </div>
+            <div class="elementosLista">
+                <img src="IMG/pantalon.jpg" alt="" class="silderImg">
+                <div class="sliderBg"></div>
+                <h1 class="listaTitulo"> PANTALON <br> DE <br> ENTRENAMIENTO</h1>
+                <h2 class="listaPrecio">$2.500</h2>
+                <button class="buyBtn">comprar ya!</button>
+            </div>
+            <div class="elementosLista">
+                <img src="IMG/buzo.jpg" alt="" class="silderImg">
+                <div class="sliderBg"></div>
+                <h1 class="listaTitulo"> BUZO <br> BASICO <br> NEGRO</h1>
+                <h2 class="listaPrecio">$3.000</h2>
+                <button class="buyBtn">comprar ya!</button>
+            </div>
+        </div>
+    </div>
+    <div class="caracteristicas">
+        <div class="caracteristica">
+            <img class="caracteristicaImg" src="IMG/envio.png" alt="">
+            <span class="caracteristicaTitulo">ENVIO GRATIS</span>
+            <span class="caracteristicaRelevante"> ENVIO GRATIS A TODO EL PAIS</span>
+        </div>
+        <div class="caracteristica">
+            <img class="caracteristicaImg" src="IMG/gif.png" alt="">
+            <span class="caracteristicaTitulo">TARJETA DE REGALO</span>
+            <span class="caracteristicaRelevante"> COMPRA UNA TARJETA DE REGALO Y TENES 10% DESC.</span>
+        </div>
+        <div class="caracteristica">
+            <img class="caracteristicaImg" src="IMG/mail.png" alt="">
+            <span class="caracteristicaTitulo">CONTACTANOS!</span>
+            <span class="caracteristicaRelevante"> ENVIANOS TUS CONSULTAS</span>
+        </div>
+    </div>
+    <div class="producto" id="producto">
+        <img class="imagenProducto" src="IMG/remera1.jpg" alt="">
+        <div class="detalleProducto">
+            <h1 class="tituloProducto">REMERA BATIZADO</h1>
+            <h2 class="precioProducto">$2.000</h2>
+            <p class="descripcion"> Remera de isntructores para batizado</p>
+        </div>
+        <div class="colores">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </div>
+        <div class="talles">
+            <div class="talle">S</div>
+            <div class="talle">M</div>
+            <div class="talle">L</div>
+            <div class="talle">XL</div>
+        </div>
+        <button class="botonProducto">COMPRAR AHORA!!!</button>
+
+        <img class="imagenProducto" src="IMG/pantalon.jpg" alt="">
+        <div class="detalleProducto">
+            <h1 class="tituloProducto">PANTALON BATIZADO</h1>
+            <h2 class="precioProducto">$2.500</h2>
+            <p class="descripcion"> Pantalon de instructores para batizado</p>
+        </div>
+        <div class="colores">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </div>
+        <div class="talles">
+            <div class="talle">36</div>
+            <div class="talle">38</div>
+            <div class="talle">40</div>
+            <div class="talle">42</div>
+        </div>
+        <button class="botonProducto">COMPRAR AHORA!!!</button>
+        <img class="imagenProducto" src="IMG/buzo.jpg" alt="">
+        <div class="detalleProducto">
+            <h1 class="tituloProducto">BUZO BATIZADO</h1>
+            <h2 class="precioProducto">$3.000</h2>
+            <p class="descripcion"> Buzo de instructores para batizado</p>
+        </div>
+        <div class="colores">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </div>
+        <div class="talles">
+            <div class="talle">S</div>
+            <div class="talle">M</div>
+            <div class="talle">L</div>
+            <div class="talle">XL</div>
+        </div>
+        <button class="botonProducto">COMPRAR AHORA!!!</button>
+
+    </div>
+    <script src="JS/compras.js"></script>
+</body>
+</html>
